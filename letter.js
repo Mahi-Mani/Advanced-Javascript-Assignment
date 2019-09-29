@@ -1,10 +1,11 @@
+// Letter constructor
 function Letter(character, isGuessed){
     this.character = character;
     this.isGuessed = isGuessed;
     var indexArr = [];
+    var userGuessArr = [];
 
     this.check = function(arr){
-        console.log("Inside check function");
         // Compares user guessed letter with random array value
     if(arr.includes(this.character)){
         console.log("Yay! Correct");
@@ -15,12 +16,9 @@ function Letter(character, isGuessed){
         console.log("Oops! Incorrect");
         return "-";
     }
-
     }
     this.index = function(arr, char){
-        console.log("Inside index function");
-        console.log("Array : " + arr);
-
+        
         // If found in array, pushes the index of character to index array
         for(var i=0; i<arr.length; i++){
         if(arr[i] == char){

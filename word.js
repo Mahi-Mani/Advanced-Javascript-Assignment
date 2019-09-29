@@ -1,4 +1,4 @@
-// Including Letter constructor
+// Including Letter constructor from letter.js file
 var Letter = require("./letter.js");
 var dashArr = [];
 var wordToBeGuessedArr = [];
@@ -6,13 +6,12 @@ var returnedChar;
 
 function Word(wordToBeGuessed){
     this.wordToBeGuessed = wordToBeGuessed;
-    console.log("Word to be guessed : " + this.wordToBeGuessed);
     wordToBeGuessedArr = [];
 
     for(var i=0; i<wordToBeGuessed.length; i++){
     wordToBeGuessedArr.push(wordToBeGuessed[i]);
     }
-    console.log("Word to be guessed array : " + wordToBeGuessedArr);
+
     // Getting length of the word user is gonna guess
     var startLength = wordToBeGuessedArr.length;
     dashArr = [];
@@ -21,7 +20,7 @@ function Word(wordToBeGuessed){
         dashArr.push("-");
     }
     // Printing it to the console
-    console.log(dashArr.join(" "));
+    console.log("\n" + dashArr.join(" "));
 
     this.word = function(character){
         // Instantiating Letter constructor
@@ -31,19 +30,16 @@ function Word(wordToBeGuessed){
         
         // Index array is returned here
         var indexArr = letter.index(wordToBeGuessedArr, returnedChar);
-        // console.log("Inside word.js after return value of indexArr : " + indexArr);
+
         // Assign user entered character to dash array to display to user
-        
         for(var i=0; i<indexArr.length; i++){
         dashArr[indexArr[i]] = returnedChar;
         }
+        console.log("\n" + dashArr.join(" "));
 
-        console.log(dashArr.join(" "));
-
+        // If dash array does not have "-" anymore, then next word is displayed to user
         if(!(dashArr.includes("-"))){
-            // console.log("You got it right! Next Word!");
-            var text = "You got it right! Next Word!";
-            console.log(text);
+            var text = "You got it right!";
             return text;
 
         }
