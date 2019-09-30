@@ -2,7 +2,7 @@
 
 ## Summary
 Word Guess command-line game using constructor functions.
-User will have to guess the name of a fruit by attempting character by character. User will have 5 guesses to make. User will play 5 rounds in total.Once 5 rounds is completed, user is prompted to either continue playing or to quit the game. 
+User will have to guess the name of a fruit by attempting character by character. User will have 5 guesses to make. User will play 5 rounds in total. Once 5 rounds is completed, user is prompted to either continue playing or to quit the game. 
 
 ## Installation Guide
 * User has to download all files from github
@@ -15,10 +15,6 @@ User will have to guess the name of a fruit by attempting character by character
 - Javascript : used to provide interactive effects
 - Node : used to run javascript file outside the browser. Supports command line user input. Node is useful is different ways. As
 far as this code is concerned, utilised inquirer to dynamically prompt question to user
-
-## Learning Points
-- Constructors
-Since I had worked with constructors throughout the application, I experimented and learnt a lot with javascript constructors
 
 ## Results
 Game starts upon running the command `node index.js` Gif image below explains the game flow.
@@ -63,6 +59,11 @@ inquirer.prompt([
 ```
 The above code snippet the start of the game flow. User is prompted to guess a letter. This code checks crucial functionality of game logic 
 that if user repeats his/her guesses. Since it is a letter guess game, if user tries to guess a whole word, then a warning is issued to the user
+
+## Learning Points
+- Constructors
+
+Since I had worked with constructors throughout the application, I experimented and learnt a lot with javascript constructors
 
 ## Future Enhancement
 A future enhancement could be made to this game logic if user guesses the whole word at an early stage, then allow user to type the whole word in one go.
