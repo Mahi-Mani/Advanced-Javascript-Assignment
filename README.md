@@ -18,6 +18,7 @@ far as this code is concerned, utilised inquirer to dynamically prompt question 
 
 ## Results
 Game starts upon running the command `node index.js` Gif image below explains the game flow.
+
 ![Site](Gif/logAfterConcert.png)
 
 ## Game Logic
