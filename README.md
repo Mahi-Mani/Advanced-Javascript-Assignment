@@ -1,7 +1,7 @@
 # Advanced-Javascript-Assignment
 
 ## Summary
-Word Guess command-line game using constructor functions
+Word Guess command-line game using constructor functions.
 User will have to guess the name of a fruit by attempting character by character. User will have 5 guesses to make. User will play 5 rounds in total.Once 5 rounds is completed, user is prompted to either continue playing or to quit the game. 
 
 ## Installation Guide
