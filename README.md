@@ -57,11 +57,11 @@ inquirer.prompt([
         
     }
 ```
-The above code snippet the start of the game flow. User is prompted to guess a letter. This code checks crucial functionality of game logic 
-that if user repeats his/her guesses. Since it is a letter guess game, if user tries to guess a whole word, then a warning is issued to the user
+The above code snippet marks the start of the game flow. User is prompted to guess a letter. This code checks crucial functionality of game logic 
+that if user repeats his/her guesses, then alerts user that guess has already been made. Since it is a letter guess game, if user tries to guess a whole word, then a warning is issued to the user
 
 ## Learning Points
-- Constructors
+* Constructors
 
 Since I had worked with constructors throughout the application, I experimented and learnt a lot with javascript constructors
 
