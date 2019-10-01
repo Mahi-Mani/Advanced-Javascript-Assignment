@@ -18,6 +18,7 @@ generateRandom();
 // Generate random number
 
 function generateRandom(){
+    console.log("Guess a fruit name!");
     round++;
     userGuessArr = [];
     
@@ -27,7 +28,7 @@ function generateRandom(){
     guessLeft = 5;
     // Initial word array
     var wordArr = [];
-    wordArr = ["Apple","Orange","Pineapple","Banana"];
+    wordArr = ["Apple","apple","Orange","orange","Pineapple","pineapple","Banana","banana","Avacado","avacado","Blueberry","blueberry","Cherry","cherry","Cucumber","cucumber","Fig","fig","Grapes","grapes","Guava","guava","Jackfruit","jackfruit"];
     length = wordArr.length;
     random = Math.floor(Math.random() * length);
 
@@ -53,6 +54,11 @@ inquirer.prompt([
     }
 ]).then(function(answer){
     
+    // If user attempts to enter whole word
+    if(answer.userGuess.length > 1){
+        console.log("\nAttempt character by character rather than typing the whole word !");
+    }
+
     if(!(userGuessArr.includes(answer.userGuess))){
         userGuessArr.push(answer.userGuess);
     }
